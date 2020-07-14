@@ -2,12 +2,12 @@
  $mail = $_POST['email'];
  
  // Database connection
- $conn = new mysqli('localhost','root','','ecoutez_user');
+ $conn = new mysqli('localhost','root','','test');
  if($conn->connect_error){
      echo "$conn->connect_error";
      die("Connection Failed : ". $conn->connect_error);
  } else {
-     $stmt = $conn->prepare("insert into subscribed_user(Email) values(?)");
+     $stmt = $conn->prepare("insert into fan(name) values(?)");
      $stmt->bind_param("s", $mail);
      $execval = $stmt->execute();
      echo $execval;

@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+    font-family: Roboto, sans-serif;
+}
+div.form{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+div.inputfield{
+    margin-top: 4rem;
+}
+
+div.inputfield input{
+    padding: 0.5rem 1rem;
+}

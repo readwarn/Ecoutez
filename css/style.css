@@ -1,0 +1,213 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.banner{
+    background-image: url(../assets/Vector.jpg);
+    background-size: 100% auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 75%;
+    padding: 1rem 2.5rem;
+}
+div.about{
+    display: flex;
+    flex-direction: column;
+}
+.about div:nth-child(1){
+    width: 50%;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color:#262F56;
+}
+.about div:nth-child(2){
+   width: 55%;
+   height: 400px;
+   margin: auto;
+}
+.about div:nth-child(2) img{
+    width: 100%;
+    height: 100%;
+}
+span.red{
+    color:#FC1A1A;
+}
+/* div.form{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+div.inputfield{
+    margin-top: 4rem;
+}
+
+div.inputfield input{
+    padding: 0.5rem 1rem;
+} */
+p.offer{
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    color:#262F56;
+    margin-top: 5rem;
+}
+div.offer{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/offer-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #262F56;
+    padding: 0rem 2.5rem;
+}
+div.offer div.side:nth-child(1){
+    width: 90%;
+    height: 400px;
+    margin: auto;
+   
+}
+div.offer div.side:nth-child(2) {
+    
+}
+div.offer div.side:nth-child(2) p{
+   font-size: 0.8rem;
+   font-weight: 700;
+   line-height: 1.5rem;
+}
+
+
+div.offer div.side:nth-child(1) img{
+    width: 50%;
+    height: 100%;
+    display: block;
+    margin:auto;
+}
+div.bullet{
+    margin-top: 5rem;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0rem 2rem;
+   justify-content: space-between;
+   align-items: center;
+}
+div.bullet div{
+     width: 34%;
+     margin-bottom: 2.5rem;
+}
+
+div.guide{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2.5rem;
+}
+div.guide-left{
+   font-size: 0.8rem;
+   color: #262F56;
+   font-weight: 500;
+}
+div.guide-left div{
+    display: flex;
+    align-items: center;
+}
+div.guide-left img{
+   height: 40px;
+   margin-right: 3rem;
+   margin-top: 2rem;
+}
+div.guide-right{
+    width: 100%;
+    margin-top: 2rem;
+    background-image: url(../assets/guide-back.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+div.guide-right img{
+    height: 400px;
+    width: 40%;
+}
+div.launch{
+    margin-top: 3rem;
+    padding: 0rem 2.5rem;
+}
+p.notify{
+ text-align: center;
+ font-size: 2rem;
+ font-weight: 700;
+ color: #262F56;
+}
+div.sub{
+    display: flex;
+    flex-direction: column;
+}
+div.sub input, button{
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+    border: #262F56 1px solid;
+}
+
+@media only screen and (min-width: 600px) {
+    .banner{
+        background-size: 70% 100%;
+        background-position: right;
+    }
+    div.about{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .about div:nth-child(2) {
+        width:35%;
+    }
+    div.offer{
+        flex-direction: row;
+    }
+    div.offer div.side:nth-child(1) img{
+        width: 100%;
+    }
+  
+}
+
+@media only screen and (min-width: 720px) {
+    div.offer div.side:nth-child(1) img{
+        width: 80%;
+    }
+    div.guide{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    div.guide-right{
+        width: 50%;
+    }
+    p.notify{
+        font-size: 3rem;
+       }
+       div.sub{
+        flex-direction: row;
+        justify-content: center;
+    }
+    div.sub input, button{
+        margin-right: 2rem;
+
+    }
+    div.sub input{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .banner{
+        background-size: 50% 100%;
+        padding: 1rem 3rem;
+    }
+    .about div:nth-child(2) {
+        width:20%;
+    }
+    div.offer{
+       background-size: 50% 100%;
+    }  
+    div.offer div.side:nth-child(1) img{
+        width: 45%;
+    }
+   
+}

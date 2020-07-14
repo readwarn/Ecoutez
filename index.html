@@ -7,12 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-  <form action="user.php" method="POST">
+  <form action="" method="POST">
     <div class="form">
-        <h1>SUBSCRIBEEE</h1>
+        <h1>SUBSCRIBE</h1>
         <div class="inputfield">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" value={{request.form.email}}>
             <input type="submit"></input>
         </div>
     </div> 

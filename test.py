@@ -1,13 +1,12 @@
 import mysql.connector
 from flask import Flask
 from flask import request
+from flask import render_template
+from flask import url_for
 
-def login():
-	if request.method == 'POST':
-		user = request.form['email']
-		print(user)
-		# code that uses the data you've got
-		# in our case, checking if the user exists
-		# and logs them in, if not redirect to sign up
+app = Flask(__name__)
+@app.route('/add_user', methods=['GET', 'POST'])
+
+def add_subscriber():
+	print("sfdffd")
 		
-	else:(print("erro"))

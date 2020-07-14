@@ -10,3 +10,7 @@ app = Flask(__name__)
 def add_subscriber():
 	print("sfdffd")
 		
+<<<<<<< HEAD
+=======
+
+>>>>>>> e215a70f787a440417dda81f59e050434cb7079c

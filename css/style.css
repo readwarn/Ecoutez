@@ -68,9 +68,7 @@ div.offer div.side:nth-child(1){
     margin: auto;
    
 }
-div.offer div.side:nth-child(2) {
-    
-}
+
 div.offer div.side:nth-child(2) p{
    font-size: 0.8rem;
    font-weight: 700;
@@ -85,7 +83,7 @@ div.offer div.side:nth-child(1) img{
     margin:auto;
 }
 div.bullet{
-    margin-top: 5rem;
+   margin-top: 5rem;
    display: flex;
    flex-wrap: wrap;
    padding: 0rem 2rem;
@@ -130,6 +128,7 @@ div.guide-right img{
 div.launch{
     margin-top: 3rem;
     padding: 0rem 2.5rem;
+    position: relative;
 }
 p.notify{
  text-align: center;
@@ -147,6 +146,29 @@ div.sub input, button{
     border: #262F56 1px solid;
 }
 
+ p#cd{
+      color: #262F56;
+      font-weight: 700;
+      font-size:4rem;
+      text-align: center;
+  }
+
+  div.response{
+      border: #262F56 1px solid;
+      position: absolute;
+      width: 78%;
+      font-size: 1.3rem;
+      background-color: white;
+      box-shadow: #262F56;
+      color: #262F56;
+      font-weight: 500;
+      text-align: center;
+      padding:0.6rem 0.6rem 3rem 1rem;
+  }
+  i.cancel{
+        display: block;
+        text-align: right;
+  }
 @media only screen and (min-width: 600px) {
     .banner{
         background-size: 70% 100%;
@@ -192,6 +214,9 @@ div.sub input, button{
     }
     div.sub input{
         width: 40%;
+    }
+    div.response{
+        width: 70%;
     }
 }
 

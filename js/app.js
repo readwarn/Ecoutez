@@ -27,21 +27,24 @@ var x = setInterval(function() {
   }
 }, 1000);
 
+$(".toggle").click(function(e){
+  $(".links").toggleClass("hide");
+})
+
 $(".cancel").click(function(e){
   $(".response").removeClass("animate__bounceIn");
   $(".response").addClass("hide");
 })
+var email=$("#email");
 
 $("#submit").click(function(e){
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-                $("#response").text(this.responseText);
-        }
-    };
-    xmlhttp.open("GET", "script/user.php", true);
-    xmlhttp.send();
-    $(".response").removeClass("hide");
-    $(".response").addClass("animate__bounceIn");
-    $(".response").removeClass("animate__bounceOut");
+    $.ajax({ 
+    type: 'POST',
+    data:{'email':email.val()},
+    url: 'script/user.php', 
+    success: function(data){
+      $("#response").text(data);
+      $(".response").removeClass("hide");
+      $(".response").addClass("animate__bounceIn");}
+    });
 })

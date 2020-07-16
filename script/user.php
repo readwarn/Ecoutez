@@ -1,5 +1,5 @@
 <?php
-   $mail = filter_input(INPUT_POST, 'email');
+    $mail = $_POST['email'];
    if (!empty($mail)){
 
        $host = "d9c88q3e09w6fdb2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";

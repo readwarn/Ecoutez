@@ -9,7 +9,6 @@
        // Create connection
        $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
        if (mysqli_connect_error()){
-           echo "unsucc";
        die('Connect Error ('. mysqli_connect_errno() .') '
        . mysqli_connect_error());
        }
@@ -17,7 +16,7 @@
        $sql = "INSERT INTO subscribers(email)
        values ('$mail')";
        if ($conn->query($sql)){
-       echo "New record is inserted sucessfully";
+       echo "YOU HAVE SUCCESSFULLY SUBSCRIBED";
        }
        else{
        echo "Error: ". $sql ."
@@ -27,7 +26,7 @@
        }
    }  
    else{
-   echo "gotcha";
+   echo "OOPS!!! EMAIL CANT BE BLANK";
    die();
    }
 

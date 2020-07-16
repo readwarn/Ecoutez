@@ -2,10 +2,11 @@ html, body{
     height: 100%;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 .banner{
     background-image: url(../assets/Vector.jpg);
-    background-size: 60% auto;
+    background-size: 55% auto;
     background-position: 40%;
     background-position:right top;
     background-repeat: no-repeat;
@@ -223,7 +224,7 @@ div.sub input, button{
    }
    div.social{
        display: flex;
-       width: 10%;
+       width: 40%;
        margin: auto;
        margin-top: 2rem;
        justify-content: space-between;
@@ -237,6 +238,9 @@ div.sub input, button{
        margin: 3.5rem 0rem;
    }
 @media only screen and (min-width: 720px) {
+    div.social{
+        width: 15%;
+    }
     div.footer{
         width: 80%;
     }

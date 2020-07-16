@@ -5,47 +5,52 @@ html, body{
 }
 .banner{
     background-image: url(../assets/Vector.jpg);
-    background-size: 100% auto;
-    background-position: top;
+    background-size: 60% auto;
+    background-position: 40%;
+    background-position:right top;
     background-repeat: no-repeat;
     min-height: 75%;
     padding: 1rem 2.5rem;
 }
+.banner a{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #262F56;
+    text-decoration: none;
+    background-color:rgba(252, 26, 26, 0.29);
+    padding: 0.5rem 0.5rem;
+    border-radius: 100%;
+}
 div.about{
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
 }
 .about div:nth-child(1){
-    width: 50%;
     font-size: 2.2rem;
     font-weight: 700;
     color:#262F56;
 }
+.about div:nth-child(1) p.detail{
+   color: #262F56;
+   font-size: 0.9rem;
+   line-height: 1.7rem;
+   font-weight: 500;
+   margin-bottom: 3.5rem;
+   width: 60%;
+}
 .about div:nth-child(2){
-   width: 55%;
    height: 400px;
    margin: auto;
+   display: flex;
 }
 .about div:nth-child(2) img{
-    width: 100%;
+    width: 210px;
     height: 100%;
 }
 span.red{
     color:#FC1A1A;
 }
-/* div.form{
-    width: 60%;
-    margin: auto;
-    text-align: center;
-}
-
-div.inputfield{
-    margin-top: 4rem;
-}
-
-div.inputfield input{
-    padding: 0.5rem 1rem;
-} */
 p.offer{
     font-size: 2.2rem;
     font-weight: 700;
@@ -57,30 +62,26 @@ div.offer{
     display: flex;
     flex-direction: column;
     background-image: url(../assets/offer-bg.png);
-    background-size: 100% 100%;
+    background-size: 90% 55%;
     background-repeat: no-repeat;
     color: #262F56;
     padding: 0rem 2.5rem;
 }
 div.offer div.side:nth-child(1){
-    width: 90%;
     height: 400px;
     margin: auto;
-   
 }
 
 div.offer div.side:nth-child(2) p{
    font-size: 0.8rem;
-   font-weight: 700;
+   font-weight: 500;
    line-height: 1.5rem;
 }
 
 
 div.offer div.side:nth-child(1) img{
-    width: 50%;
+    width:  210px;
     height: 100%;
-    display: block;
-    margin:auto;
 }
 div.bullet{
    margin-top: 5rem;
@@ -89,6 +90,10 @@ div.bullet{
    padding: 0rem 2rem;
    justify-content: space-between;
    align-items: center;
+}
+div.bullet img{
+   width: 33px;
+   height: 33px;
 }
 div.bullet div{
      width: 34%;
@@ -99,9 +104,13 @@ div.guide{
     display: flex;
     flex-direction: column;
     padding: 0rem 2.5rem;
+    background-image: url(../assets/guide-back.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right top;
 }
 div.guide-left{
-   font-size: 0.8rem;
+   font-size: 1rem;
    color: #262F56;
    font-weight: 500;
 }
@@ -117,16 +126,15 @@ div.guide-left img{
 div.guide-right{
     width: 100%;
     margin-top: 2rem;
-    background-image: url(../assets/guide-back.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    display: flex;
 }
 div.guide-right img{
     height: 400px;
-    width: 40%;
+    width: 210px;
+    display: block;
+    margin-left: auto;
 }
 div.launch{
-    margin-top: 3rem;
     padding: 0rem 2.5rem;
     position: relative;
 }
@@ -139,6 +147,7 @@ p.notify{
 div.sub{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 div.sub input, button{
     padding: 1rem 2rem;
@@ -156,47 +165,100 @@ div.sub input, button{
   div.response{
       border: #262F56 1px solid;
       position: absolute;
-      width: 78%;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      margin: auto;
       font-size: 1.3rem;
-      background-color: white;
+      background-color:#262F56;
       box-shadow: #262F56;
-      color: #262F56;
+      color: white;
       font-weight: 500;
       text-align: center;
-      padding:0.6rem 0.6rem 3rem 1rem;
+      padding:1rem;
+      transition: all ease-in-out 0.7s;
   }
   i.cancel{
         display: block;
         text-align: right;
   }
-@media only screen and (min-width: 600px) {
+  .hide{
+  opacity: 0;
+  z-index: -3;
+  }
+  p.con{
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+  }
+  div.contact a{
+    text-decoration: none;
+    color:white;
+    margin-right: 1.7rem;
+  }
+  div.contact a:hover{
+      color: aqua;
+  }
+   div.contact{
+    padding: 2rem;
+    background-image: url(../assets/foot.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 100% 50%;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: white;
+      margin-top: 2rem;
+      background-color: #262F56;
+   }
+   div.footer{
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       margin: auto;
+       margin-bottom: 3rem;
+   }
+   div.social{
+       display: flex;
+       width: 10%;
+       margin: auto;
+       margin-top: 2rem;
+       justify-content: space-between;
+       color: aqua;
+   }
+   div.social i{
+    font-size: 1.5rem;
+    cursor: pointer;
+   }
+   div.address{
+       margin: 3.5rem 0rem;
+   }
+@media only screen and (min-width: 720px) {
+    div.footer{
+        width: 80%;
+    }
     .banner{
-        background-size: 70% 100%;
-        background-position: right;
+        background-size: 60% 100%;
     }
     div.about{
         flex-direction: row;
         justify-content: space-between;
     }
-    .about div:nth-child(2) {
-        width:35%;
-    }
     div.offer{
         flex-direction: row;
+        background-size: 40% 100%;
     }
-    div.offer div.side:nth-child(1) img{
+    div.offer div.side:nth-child(1){
         width: 100%;
     }
-  
-}
 
-@media only screen and (min-width: 720px) {
-    div.offer div.side:nth-child(1) img{
-        width: 80%;
-    }
     div.guide{
         flex-direction: row;
         justify-content: space-between;
+        background-size: 60% 100%;
     }
     div.guide-right{
         width: 50%;
@@ -216,23 +278,23 @@ div.sub input, button{
         width: 40%;
     }
     div.response{
-        width: 70%;
+        width: 100%;
     }
 }
 
 @media only screen and (min-width: 992px) {
     .banner{
-        background-size: 50% 100%;
+        background-size: 45% 100%;
         padding: 1rem 3rem;
     }
-    .about div:nth-child(2) {
-        width:20%;
-    }
     div.offer{
-       background-size: 50% 100%;
+       background-size: 35% 100%;
     }  
-    div.offer div.side:nth-child(1) img{
-        width: 45%;
+     div.guide{
+        background-size: 50% 100%;
+     }
+    .about div:nth-child(1){
+        width: 50%;
     }
    
 }

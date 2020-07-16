@@ -27,12 +27,7 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-$(".toggle").click(function(e){
-  $(".links").toggleClass("hide");
-})
-
 $(".cancel").click(function(e){
-  $(".response").removeClass("animate__bounceIn");
   $(".response").addClass("hide");
 })
 var email=$("#email");
@@ -44,7 +39,6 @@ $("#submit").click(function(e){
     url: 'script/user.php', 
     success: function(data){
       $("#response").text(data);
-      $(".response").removeClass("hide");
-      $(".response").addClass("animate__bounceIn");}
+      $(".response").removeClass("hide");}
     });
 })

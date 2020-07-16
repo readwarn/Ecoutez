@@ -13,8 +13,7 @@
        . mysqli_connect_error());
        }
        else{
-       $sql = "INSERT INTO subscribers(email)
-       values ('$mail')";
+       $sql = "INSERT INTO subscribers(email) values ('$mail')";
        if ($conn->query($sql)){
        echo "YOU HAVE SUCCESSFULLY SUBSCRIBED";
        }

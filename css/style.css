@@ -33,7 +33,7 @@ html, body{
  transition: all ease-in-out 3s;
  z-index: 22;
 }
-div.gallery{
+.gallery{
     position: absolute;
     color: #262F56;
     font-size: 2rem;

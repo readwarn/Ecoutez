@@ -25,13 +25,14 @@ html, body{
 .showoff{
     transform: translateX(0%);
 }
-.hideOff{
-    transform: translateX(500%);
-}
 .card{
  position: absolute;
- transition: all ease-in-out 3s;
+ transition: all ease-in-out 10s;
  z-index: 22;
+ opacity: 0;
+}
+.card:hover{
+    opacity: 0;
 }
 .gallery{
     position: absolute;

@@ -46,7 +46,7 @@ $("#submit").click(function(e){
 
 $(".g-cancel").click(function(e){
   $(".gallery").css("display","none");
-  $(".card").addClass("hideOff");
+  $(".card").removeClass("animate__fadeInLeft")
 });
 
 $(".ii").click(function(e){
@@ -54,26 +54,26 @@ $(".ii").click(function(e){
 });
 
 $("#c1").click(function(e){
-  $(".card1").removeClass("hideOff");
+  $(".card1").addClass("animate__fadeInLeft");
 });
 
 $("#c2").click(function(e){
-  $(".card2").removeClass("hideOff");
+  $(".card2").addClass("animate__fadeInLeft");
 });
 
 $("#c3").click(function(e){
-  $(".card3").removeClass("hideOff");
+  $(".card3").addClass("animate__fadeInLeft");
 });
 
 $("#c4").click(function(e){
-  $(".card4").removeClass("hideOff");
+  $(".card4").addClass("animate__fadeInLeft");
 });
 
 $("#c5").click(function(e){
-  $(".card5").removeClass("hideOff");
+  $(".card5").addClass("animate__fadeInLeft");
 });
 
 $("#c6").click(function(e){
-  $(".card6").removeClass("hideOff");
+  $(".card6").addClass("animate__fadeInLeft");
 });
 

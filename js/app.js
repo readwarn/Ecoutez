@@ -42,3 +42,36 @@ $("#submit").click(function(e){
       $(".response").removeClass("hide");}
     });
 })
+
+$(".g-cancel").click(function(e){
+  $(".gallery").css("display","none");
+});
+
+$(".ii").click(function(e){
+  $(".gallery").css("display","block");
+});
+
+$("#c1").click(function(e){
+  $(".card1").removeClass("hideOff");
+});
+
+$("#c2").click(function(e){
+  $(".card2").removeClass("hideOff");
+});
+
+$("#c3").click(function(e){
+  $(".card3").removeClass("hideOff");
+});
+
+$("#c4").click(function(e){
+  $(".card4").removeClass("hideOff");
+});
+
+$("#c5").click(function(e){
+  $(".card5").removeClass("hideOff");
+});
+
+$("#c6").click(function(e){
+  $(".card6").removeClass("hideOff");
+});
+

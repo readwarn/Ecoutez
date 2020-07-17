@@ -4,7 +4,11 @@ var countDownDate = new Date("Aug 15, 2020 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
-
+    
+var logo=$(".fader");
+ logo.toggleClass("red");
+ $("span.red").toggleClass("bb");
+ 
   // Get today's date and time
   var now = new Date().getTime();
 

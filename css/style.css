@@ -21,6 +21,13 @@ html, body{
     background-color:rgba(252, 26, 26, 0.29);
     padding: 0.5rem 0.5rem;
     border-radius: 100%;
+    transition: all ease-in-out 0.5s;
+}
+.banner a.red{
+    background-color:rgba(109, 7, 7, 0.29);
+}
+.about span.bb{
+    color: #fdbebe;
 }
 .showoff{
     transform: translateX(0%);
@@ -88,6 +95,7 @@ div.about{
 }
 span.red{
     color:#FC1A1A;
+    transition: all ease-in-out 1s;
 }
 p.offer{
     font-size: 2.2rem;

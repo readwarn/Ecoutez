@@ -38,10 +38,10 @@ html, body{
     position: absolute;
     color: #262F56;
     font-size: 2rem;
-    height:99%;
+    min-height:99%;
     width: 100%;
     display: none;
-    background-color: rgba(252, 26, 26, 0.29);
+    background-color: rgba(226, 136, 136, 0.9);
     transition: all ease-in-out 1s;
 }
 .show{
@@ -54,7 +54,7 @@ div.g-card{
 }
 div.gallery img{
     width: 250px;
-    height: 90%;
+    height: 100%;
 }
 div.gallery i{
     padding: 1rem 4rem;
